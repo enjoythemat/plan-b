@@ -1,0 +1,18 @@
+.card {
+  width: 1220px;
+  height: 300px;
+  margin: .5rem;
+  border-radius: 1rem;
+  background: linear-gradient(to bottom, #eef5f6, #f6f6f6);
+  background-size: 100%;
+  padding: 1rem 3rem;
+  display: flex;
+
+  @media screen and (max-width: 1300px) {
+    height: 300px;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+  }
+}

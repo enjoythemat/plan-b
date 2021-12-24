@@ -1,0 +1,31 @@
+.wrapper {
+  width: 100%;
+  border-bottom: 1px solid #e7e7e7;
+
+  .nav {
+    height: 3rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+    color: #303b44;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .links {
+      width: 1140px;
+      display: flex;
+      justify-content: space-between;
+
+
+      a {
+        &:hover {
+          color: #13AAC0FF;
+        }
+      }
+
+      .active {
+        color: #13AAC0FF;
+      }
+    }
+  }
+}

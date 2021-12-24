@@ -1,0 +1,28 @@
+.wrapper {
+  width: 100%;
+  color: #303844;
+  padding: 0 1rem;
+
+  @media screen and (max-width: 1300px) {
+    max-width: 960px;
+  }
+
+  @media screen and (max-width: 576px) {
+    width: 100%;
+  }
+
+  .products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reviews {
+    max-width: 1300px;
+    margin: 4rem auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
