@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from '../styles/Header.module.scss'
 
-const Header = () => {
+const Header = ({ menuClickHandler, menuIsOpen }) => {
 
   return (
     <div className={styles.wrapper}>
@@ -18,6 +18,10 @@ const Header = () => {
           <p>г. Пермь, ул. Героев Хасана, к. 70</p>
           <p>+7 (904) 848-87-07</p>
         </div>
+      </div>
+
+      <div className={styles.button} onClick={menuClickHandler}>
+        <Image src={menuIsOpen ? "/menu-exit.svg" : "/menu.svg"} width={50} height={50} />
       </div>
     </div>
   )

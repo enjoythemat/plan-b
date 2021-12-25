@@ -41,8 +41,8 @@ const Main = () => {
     <div className={styles.wrapper}>
 
       <Heading
-        title="Plan B - Лазерная резка и гравировка"
-        subTitle="Предоставляем услуги по строгому соблюдению ГОСТ и нормативов"
+        title="Мастерская План-Б в Перми"
+        subTitle="Лазерная резка и гравировка по строгому соблюдению нормативов"
       />
 
       <div className={styles.products}>
@@ -55,7 +55,7 @@ const Main = () => {
       />
 
       <div className={styles.products}>
-        {infoAboutServices.map(({id, title, subTitle}) => (
+        {infoAboutServices.map(({ id, title, subTitle }) => (
           <LittleCard key={id} title={title} subTitle={subTitle} />
         ))}
       </div>
@@ -65,7 +65,7 @@ const Main = () => {
       />
 
       <div className={styles.reviews}>
-        {reviews.map(({id, name, comment, pic}) => (
+        {reviews.map(({ id, name, comment, pic }) => (
           <Review key={id} name={name} comment={comment} pic={pic} />
         ))}
       </div>

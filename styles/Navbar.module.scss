@@ -2,6 +2,10 @@
   width: 100%;
   border-bottom: 1px solid #e7e7e7;
 
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
   .nav {
     height: 3rem;
     margin: 0 auto;
