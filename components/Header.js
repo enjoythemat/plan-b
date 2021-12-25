@@ -1,10 +1,11 @@
 import Image from 'next/image'
 import styles from '../styles/Header.module.scss'
+import Navbar from './Navbar'
 
 const Header = ({ menuClickHandler, menuIsOpen }) => {
 
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} onClick={menuClickHandler}>
       <div className={styles.header}>
         <div>
           <Image src="/logo-1.png" width={125} height={60} />
@@ -20,7 +21,9 @@ const Header = ({ menuClickHandler, menuIsOpen }) => {
         </div>
       </div>
 
-      <div className={styles.button} onClick={menuClickHandler}>
+      {menuIsOpen ? <Navbar menuIsOpen={menuIsOpen} /> : null}
+
+      <div className={styles.button}>
         <Image src={menuIsOpen ? "/menu-exit.svg" : "/menu.svg"} width={50} height={50} />
       </div>
     </div>

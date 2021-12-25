@@ -62,6 +62,7 @@ const Main = () => {
 
       <Heading
         title="Отвызы клиентов"
+        subTitle="Больше в наших соц сетях!"
       />
 
       <div className={styles.reviews}>

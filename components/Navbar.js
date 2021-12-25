@@ -10,11 +10,11 @@ const navigation = [
   { id: 5, title: 'Контакты', path: '/contacts' }
 ]
 
-const Navbar = () => {
+const Navbar = ({ menuIsOpen }) => {
   const { pathname } = useRouter()
 
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} style={menuIsOpen && {display: 'flex'}}>
       <nav className={styles.nav}>
         <div className={styles.links}>
           {navigation.map(({id, title, path}) => (

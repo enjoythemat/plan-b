@@ -4,22 +4,37 @@
 
   @media screen and (max-width: 768px) {
     display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
   }
 
   .nav {
     height: 3rem;
     margin: 0 auto;
     padding: 0 1rem;
+    line-height: 3rem;
     color: #303b44;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 1140px;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      height: 100%;
+      line-height: 5rem;
+    }
 
     .links {
-      width: 1140px;
       display: flex;
       justify-content: space-between;
 
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
 
       a {
         &:hover {
