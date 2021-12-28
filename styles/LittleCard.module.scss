@@ -4,10 +4,12 @@
   margin: .5rem;
   border-radius: 1rem;
   background: linear-gradient(to bottom, #eef5f6, #f6f6f6);
+  flex-shrink: 0;
 
   @media screen and (max-width: 1300px) {
     width: 216px;
     height: 216px;
     overflow: hidden;
+    border-radius: .3rem;
   }
 }

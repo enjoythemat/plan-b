@@ -9,7 +9,6 @@
   display: flex;
 
   @media screen and (max-width: 1300px) {
-    height: 300px;
     margin: 0;
     background-repeat: no-repeat;
     background-size: auto 100%;
@@ -17,7 +16,7 @@
   }
 
   @media screen and (max-width: 768px) {
-    height: 300px;
+    height: 160px;
     border-radius: .5rem;
     background-size: auto 100%;
   }

@@ -1,6 +1,6 @@
 import Header from './Header'
 import Navbar from './Navbar'
-import Footer from './Footer'
+// import Footer from './Footer'
 import { useState } from 'react'
 
 const Layout = ({ children }) => {
@@ -8,7 +8,6 @@ const Layout = ({ children }) => {
 
   const menuClickHandler = () => {
     setMenuIsOpen(!menuIsOpen)
-    console.log(menuIsOpen)
   }
 
   return (
@@ -19,7 +18,7 @@ const Layout = ({ children }) => {
       />
       <Navbar />
       {children}
-      <Footer />
+      {/*<Footer />*/}
     </>
   )
 }

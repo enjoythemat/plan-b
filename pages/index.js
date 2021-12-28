@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.scss'
 import Main from '../components/Main'
+import styles from '../styles/Home.module.scss'
 
 const Home = () => (
   <div className={styles.wrapper}>
