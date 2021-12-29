@@ -1,5 +1,6 @@
-.wrapper {
+.nav {
   width: 100%;
+  padding: 0 1rem;
   border-bottom: 1px solid #e7e7e7;
 
   @media screen and (max-width: 768px) {
@@ -12,13 +13,16 @@
     z-index: 100;
   }
 
-  .nav {
+  .wrapper {
     height: 3rem;
     margin: 0 auto;
-    padding: 0 1rem;
     line-height: 3rem;
     color: #303b44;
-    max-width: 1140px;
+    max-width: 1300px;
+
+    @media screen and (max-width: 1300px) {
+      max-width: 1100px;
+    }
 
     @media screen and (max-width: 768px) {
       width: 100%;
@@ -35,9 +39,13 @@
         align-items: center;
         justify-content: center;
         min-height: 100vh;
+        font-size: 24px;
       }
 
       a {
+        width: 100%;
+        text-align: center;
+
         &:hover {
           color: #13AAC0FF;
         }

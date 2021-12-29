@@ -1,9 +1,9 @@
 import styles from '../styles/LittleCard.module.scss'
 
-const LittleCard = ({ title, subTitle }) => {
+const LittleCard = ({ title, subTitle, pic }) => {
   return (
-    <div className={styles.card}>
-
+    <div className={styles.card} style={{backgroundImage: `url("${pic}")`}}>
+      <p>{title}</p>
     </div>
   )
 }

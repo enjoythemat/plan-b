@@ -14,8 +14,8 @@ const Navbar = ({ menuIsOpen }) => {
   const { pathname } = useRouter()
 
   return (
-    <div className={styles.wrapper} style={menuIsOpen && {display: 'flex'}}>
-      <nav className={styles.nav}>
+    <div className={styles.nav} style={menuIsOpen && {display: 'flex'}}>
+      <nav className={styles.wrapper}>
         <div className={styles.links}>
           {navigation.map(({id, title, path}) => (
             <Link key={id} href={path}>

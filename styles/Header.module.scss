@@ -1,7 +1,8 @@
-.wrapper {
+.header {
   width: 100%;
   background-color: #fafafc;
   position: relative;
+  padding: 0 1rem;
 
   @media screen and (max-width: 768px) {
     border-bottom: 1px solid #e7e7e7;
@@ -20,15 +21,18 @@
     }
   }
 
-  .header {
-    max-width: 1140px;
+  .wrapper {
+    max-width: 1300px;
     min-height: 4rem;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #303844;
-    padding: 0 1rem;
+
+    @media screen and (max-width: 1300px) {
+      max-width: 1100px;
+    }
 
     @media screen and (max-width: 768px) {
       flex-direction: column;

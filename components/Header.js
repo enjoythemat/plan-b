@@ -5,8 +5,8 @@ import Navbar from './Navbar'
 const Header = ({ menuClickHandler, menuIsOpen }) => {
 
   return (
-    <div className={styles.wrapper} onClick={menuClickHandler}>
-      <div className={styles.header}>
+    <div className={styles.header} onClick={menuClickHandler}>
+      <div className={styles.wrapper}>
         <div>
           <Image src="/logo-1.png" width={125} height={60} />
         </div>
