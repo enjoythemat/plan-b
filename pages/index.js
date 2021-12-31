@@ -3,7 +3,15 @@ import styles from '../styles/Home.module.scss'
 import Heading from '../components/Heading'
 import LittleCard from '../components/LittleCard'
 import BigCard from '../components/BigCard'
+
 import Review from '../components/Review'
+
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import 'swiper/css/scrollbar'
 
 const infoAboutServices = [
   { id: 1, title: 'Лазерная резка', subTitle: 'Lorem ipsum dolor sit.', pic: 'https://lazer-rmk.ru/wp-content/uploads/2019/03/lazer-rezka.png' },
@@ -45,12 +53,25 @@ const Home = () => (
 
     <Heading
       title="Мастерская План-Б"
-      subTitle="Лазерная резка и гравировка по современным стандартам"
+      // subTitle="Лазерная резка и гравировка по современным стандартам"
       pos={'center'}
     />
 
     <div className={styles.wallpaper}>
-      <BigCard />
+      <Swiper
+        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        className={styles.wallpaper}
+        spaceBetween={50}
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: true }}
+        onSlideChange={() => console.log('slide change')}
+        onSwiper={(swiper) => console.log(swiper)}
+      >
+        <SwiperSlide><BigCard /></SwiperSlide>
+        <SwiperSlide><BigCard /></SwiperSlide>
+        <SwiperSlide><BigCard /></SwiperSlide>
+      </Swiper>
     </div>
 
     <Heading

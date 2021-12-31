@@ -1,20 +1,24 @@
 import styles from '../styles/Heading.module.scss'
 
 const Heading = ({ title, subTitle = '', pos = '' }) => {
-  let style
+  let stylePos
+  let styleFont
 
   if (pos) {
-    style = {
+    stylePos = {
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'center',
       alignItems: 'center'
     }
+    styleFont = {
+      fontSize: '40px'
+    }
   }
 
   return (
-    <div className={styles.heading} style={style}>
-      <p className={styles.title}>{title}</p>
+    <div className={styles.heading} style={stylePos}>
+      <p className={styles.title} style={styleFont}>{title}</p>
       <p className={styles.subtitle}>{subTitle}</p>
     </div>
   )

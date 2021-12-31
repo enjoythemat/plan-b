@@ -5,7 +5,7 @@ const BigCard = ({ title, subTitle }) => {
   return (
     <div
       className={styles.card}
-      style={{ backgroundImage: `url("/back-1.jpg")` }}
+      style={{ backgroundImage: `url("/back-2.jpg")` }}
     >
       {/*<div className={styles.info}>*/}
       {/*  <h1>Мастерская План Б</h1>*/}
