@@ -17,7 +17,6 @@
     height: 3rem;
     margin: 0 auto;
     line-height: 3rem;
-    color: #303b44;
     max-width: 1300px;
 
     @media screen and (max-width: 1300px) {
@@ -47,12 +46,12 @@
         text-align: center;
 
         &:hover {
-          color: #13AAC0FF;
+          color: #007aff;
         }
       }
 
       .active {
-        color: #13AAC0FF;
+        color: #007aff;
       }
     }
   }

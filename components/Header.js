@@ -1,14 +1,14 @@
 import Image from 'next/image'
-import styles from '../styles/Header.module.scss'
 import Navbar from './Navbar'
+import styles from '../styles/Header.module.scss'
 
 const Header = ({ menuClickHandler, menuIsOpen }) => {
 
   return (
     <div className={styles.header} onClick={menuClickHandler}>
       <div className={styles.wrapper}>
-        <div>
-          <Image src="/logo-1.png" width={125} height={60} />
+        <div className={styles.logo}>
+          <Image src="/logo-2.png" width={120} height={23} alt={'Мастерская План Б'} />
         </div>
 
         <div className={styles.request}>

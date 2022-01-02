@@ -12,6 +12,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto 100%;
+  cursor: pointer;
 
   p {
     width: 100%;
@@ -22,7 +23,7 @@
     font-size: 20px;
     font-weight: lighter;
     text-transform: uppercase;
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(0, 0, 0, 0.8);
   }
 
   @media screen and (max-width: 1300px) {

@@ -9,10 +9,11 @@ const Heading = ({ title, subTitle = '', pos = '' }) => {
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'center',
-      alignItems: 'center'
+      alignItems: 'center',
+      padding: '0'
     }
     styleFont = {
-      fontSize: '40px'
+      fontSize: '42px'
     }
   }
 

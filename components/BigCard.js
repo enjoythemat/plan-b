@@ -1,11 +1,11 @@
 import styles from '../styles/BigCard.module.scss'
 
-const BigCard = ({ title, subTitle }) => {
+const BigCard = ({ id }) => {
 
   return (
     <div
       className={styles.card}
-      style={{ backgroundImage: `url("/back-2.jpg")` }}
+      style={{ backgroundImage: `url("/back-${id}.jpg")` }}
     >
       {/*<div className={styles.info}>*/}
       {/*  <h1>Мастерская План Б</h1>*/}
