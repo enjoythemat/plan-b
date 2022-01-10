@@ -6,8 +6,12 @@ import { useState } from 'react'
 const Layout = ({ children }) => {
   const [menuIsOpen, setMenuIsOpen] = useState(false)
 
-  const menuClickHandler = () => {
-    setMenuIsOpen(!menuIsOpen)
+  const menuClickHandler = payload => {
+    if (payload === 'Close') {
+      setMenuIsOpen(false)
+    } else {
+      setMenuIsOpen(!menuIsOpen)
+    }
   }
 
   return (
@@ -16,7 +20,9 @@ const Layout = ({ children }) => {
         menuClickHandler={menuClickHandler}
         menuIsOpen={menuIsOpen}
       />
-      <Navbar />
+      <Navbar
+        menuClickHandler={menuClickHandler}
+      />
       {children}
       {/*<Footer />*/}
     </>

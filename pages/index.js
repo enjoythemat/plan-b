@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Heading from '../components/Heading'
 import BigCard from '../components/BigCard'
-import MidCard from '../components/MidCard'
 import LittleCard from '../components/LittleCard'
 import styles from '../styles/Home.module.scss'
 
@@ -11,6 +10,8 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
+
+import { YMaps, Map, Placemark } from 'react-yandex-maps'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhoneVolume, faBookReader, faHandshake } from '@fortawesome/free-solid-svg-icons'
@@ -34,10 +35,22 @@ const Home = () => (
       <title>Мастерская План Б</title>
     </Head>
 
-    <Heading
-      title="Мастерская План-Б"
-      pos="center"
-    />
+    <div className={styles.wallpaper}>
+      <Swiper
+        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        className={styles.wallpaper}
+        spaceBetween={50}
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: true }}
+      >
+        {wallpapers.map(el => (
+          <SwiperSlide key={el.id} >
+            <BigCard id={el.id} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
 
     <div className={styles.wallpaper}>
       <Swiper
@@ -74,7 +87,7 @@ const Home = () => (
 
     <div className={styles.work}>
       <div className={styles.wrapper}>
-        <div className={styles.iconbox}>
+        <div className={styles.iconBox}>
           <FontAwesomeIcon icon={faPhoneVolume} className={styles.icon} />
         </div>
         <div className={styles.case}>
@@ -96,14 +109,14 @@ const Home = () => (
             классический вариант встречи со специалистом, если Вам так будет
             удобно. Оба варианта несут одинаковое качество. </p>
         </div>
-        <div className={styles.iconbox}>
+        <div className={styles.iconBox}>
           <FontAwesomeIcon icon={faBookReader} className={styles.icon} />
         </div>
       </div>
 
       <div className={styles.work}>
         <div className={styles.wrapper}>
-          <div className={styles.iconbox}>
+          <div className={styles.iconBox}>
             <FontAwesomeIcon icon={faHandshake} className={styles.icon} />
           </div>
           <div className={styles.case}>
@@ -117,10 +130,28 @@ const Home = () => (
     </div>
 
     <Heading
-      title="Отвызы клиентов"
-      subTitle="Больше в наших соц сетях!"
+      title="Мы на карте"
+      subTitle="Проложите путь, либо просто позвоните нам"
     />
+
+    <div className={styles.mapWrapper}>
+      <YMaps>
+        <Map
+          className={styles.map}
+          defaultState={{
+            center: [57.96, 56.26],
+            zoom: 11,
+            controls: ['zoomControl', 'fullscreenControl']
+          }}
+          modules={['control.ZoomControl', 'control.FullscreenControl']}
+        >
+          <Placemark defaultGeometry={[57.96, 56.26]} />
+        </Map>
+      </YMaps>
+    </div>
   </div>
 )
 
 export default Home
+
+

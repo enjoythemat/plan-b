@@ -10,16 +10,20 @@ const navigation = [
   { id: 5, title: 'Контакты', path: '/contacts' }
 ]
 
-const Navbar = ({ menuIsOpen }) => {
+const Navbar = ({ menuIsOpen, menuClickHandler }) => {
   const { pathname } = useRouter()
 
   return (
     <div className={styles.nav} style={menuIsOpen && {display: 'flex'}}>
+
       <nav className={styles.wrapper}>
-        <div className={styles.links}>
+        <div className={styles.links} >
           {navigation.map(({id, title, path}) => (
             <Link key={id} href={path}>
-              <a className={pathname === path ? styles.active : null}>{title}</a>
+              <a
+                className={pathname === path ? styles.active : null}
+                onClick={() => menuClickHandler('Close')}
+              >{title}</a>
             </Link>
           ))}
         </div>
