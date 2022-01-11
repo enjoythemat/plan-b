@@ -52,23 +52,6 @@ const Home = () => (
       </Swiper>
     </div>
 
-    <div className={styles.wallpaper}>
-      <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
-        className={styles.wallpaper}
-        spaceBetween={50}
-        slidesPerView={1}
-        navigation
-        pagination={{ clickable: true }}
-      >
-        {wallpapers.map(el => (
-          <SwiperSlide key={el.id} >
-            <BigCard id={el.id} />
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
-
     <Heading
       title="Список наших услуг"
       subTitle="Индивидуальный подход к каждому клиенту!"

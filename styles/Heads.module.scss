@@ -55,12 +55,12 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #007aff;
+      background-color: #31d59b;
       border-radius: 1rem;
       transition: box-shadow .3s;
       padding: 0 2rem;
       &:hover {
-        box-shadow: 0 0 15px #007aff;
+        box-shadow: 0 0 15px #31d59b;
       }
 
       p {

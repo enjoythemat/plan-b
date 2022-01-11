@@ -1,22 +1,15 @@
 import Image from 'next/image'
-import Navbar from './Navbar'
-import styles from '../styles/Header.module.scss'
+import styles from '../../../styles/Heads.module.scss'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
 
-const Header = ({ menuClickHandler, menuIsOpen }) => {
+const Heads = ({ menu, menuIconHandler }) => {
 
   return (
     <div className={styles.header}>
       <div className={styles.wrapper}>
         <div className={styles.logo}>
-          {/*<Image*/}
-          {/*  src="/logo-2.png"*/}
-          {/*  width={120}*/}
-          {/*  height={23}*/}
-          {/*  alt={'Мастерская План Б'}*/}
-          {/*/>*/}
           <h1 className={styles.logoText}>Мастерская План Б</h1>
         </div>
 
@@ -30,25 +23,17 @@ const Header = ({ menuClickHandler, menuIsOpen }) => {
         </div>
       </div>
 
-      {menuIsOpen
-        ? <Navbar
-            menuIsOpen={menuIsOpen}
-            menuClickHandler={menuClickHandler}
-          />
-        : null
-      }
-
       <div className={styles.button}>
         <Image
-          src={menuIsOpen ? "/menu-exit.svg" : "/menu.svg"}
+          src={menu ? "/menu-exit.svg" : "/menu.svg"}
           width={50}
           height={50}
           alt={'Меню'}
-          onClick={menuClickHandler}
+          onClick={menuIconHandler}
         />
       </div>
     </div>
   )
 }
 
-export default Header
+export default Heads

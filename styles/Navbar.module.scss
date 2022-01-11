@@ -14,6 +14,19 @@
     z-index: 100;
   }
 
+  .button {
+    display: none;
+    z-index: 100;
+
+    @media screen and (max-width: 768px) {
+      cursor: pointer;
+      position: absolute;
+      display: block;
+      top: 1rem;
+      right: 1rem;
+    }
+  }
+
   .wrapper {
     height: 3rem;
     margin: 0 auto;
@@ -47,12 +60,12 @@
         text-align: center;
 
         &:hover {
-          color: #007aff;
+          color: #31d59b;
         }
       }
 
       .active {
-        color: #007aff;
+        color: #31d59b;
       }
     }
   }
