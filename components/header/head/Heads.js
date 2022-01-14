@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import styles from '../../../styles/Heads.module.scss'
+import styles from '../../../styles/header/Heads.module.scss'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
@@ -10,7 +10,7 @@ const Heads = ({ menu, menuIconHandler }) => {
     <div className={styles.header}>
       <div className={styles.wrapper}>
         <div className={styles.logo}>
-          <h1 className={styles.logoText}>Мастерская План Б</h1>
+          <h1 className={styles.logoText}>План Б</h1>
         </div>
 
         <div className={styles.request}>

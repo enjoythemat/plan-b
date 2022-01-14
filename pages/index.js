@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Heading from '../components/Heading'
 import BigCard from '../components/BigCard'
 import LittleCard from '../components/LittleCard'
+import MidCard from '../components/MidCard'
 import styles from '../styles/Home.module.scss'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -61,6 +62,62 @@ const Home = () => (
       {infoAboutServices.map(({ id, title, subTitle, pic }) => (
         <LittleCard key={id} title={title} subTitle={subTitle} pic={pic} />
       ))}
+    </div>
+
+    <div className={styles.about}>
+      <div className={styles.wrapper}>
+        <h1>О компании</h1>
+        <h3>У нас ваша фантазия и творческий порыв обретут жизнь!</h3>
+        <p>
+          Plan B - производственная компания, поэтому изготовим Вам изделие, не делая
+          никакой накрутки магазина, и учтем все Ваши пожелания по цвету, форме и
+          содержанию изделия.
+        </p>
+        <h3>В нашей мастерской делают:</h3>
+        <p>
+          Буквы и слова из дерева;
+          Фоторамки и семейные дерева;
+          Медальницы для юных чемпионов;
+          Детские метрики;
+          Топперы для ваших мероприятий;
+          Свадебный декор (арки, ширмы, объемные буквы);
+          Предметы интерьера;
+          Декор для дома;
+          Сувенирная продукция;
+          Светильники;
+          Оборудование B2B... и многое другое!
+        </p>
+
+        {/*<ul>*/}
+        {/*  <li>Буквы и слова из дерева</li>*/}
+        {/*  <li>Фоторамки и семейные древа</li>*/}
+        {/*  <li>Медальницы для юных чемпионов</li>*/}
+        {/*  <li>Детские метрики</li>*/}
+        {/*  <li>Топперы для ваших мероприятий</li>*/}
+        {/*  <li>Свадебный декор (арки, ширмы, объемные буквы)</li>*/}
+        {/*  <li>Предметы интерьера</li>*/}
+        {/*  <li>Декор для дома</li>*/}
+        {/*  <li>Сувенирная продукция</li>*/}
+        {/*  <li>Светильники</li>*/}
+        {/*  <li>Оборудование b2b... и многое другое!</li>*/}
+        {/*</ul>*/}
+        <button>Подробнее</button>
+
+        <div className={styles.numbers}>
+          <div>
+            <h2>5</h2>
+            <p>лет</p>
+          </div>
+          <div>
+            <h2>500</h2>
+            <p>клиентов</p>
+          </div>
+          <div>
+            <h2>100%</h2>
+            <p>положительных отзывов</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <Heading
@@ -132,9 +189,17 @@ const Home = () => (
         </Map>
       </YMaps>
     </div>
+
+    <Heading
+      title="Отзывы партнёров и клиентов"
+      subTitle="Больше в наших соц сетях"
+    />
+
+    <div className={styles.products}>
+      <MidCard />
+      <MidCard />
+    </div>
   </div>
 )
 
 export default Home
-
-

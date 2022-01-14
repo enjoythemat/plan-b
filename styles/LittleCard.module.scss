@@ -12,6 +12,12 @@
   align-items: center;
   background-size: auto 100%;
   cursor: pointer;
+  overflow: hidden;
+  transition: background-size .2s ease-in-out;
+
+  &:hover {
+    background-size: auto 125%;
+  }
 
   p {
     width: 100%;
@@ -23,6 +29,10 @@
     font-weight: lighter;
     text-transform: uppercase;
     background-color: rgba(0, 0, 0, 0.8);
+
+    &:hover {
+
+    }
   }
 
   @media screen and (max-width: 1300px) {
