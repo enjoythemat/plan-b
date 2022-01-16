@@ -1,34 +1,11 @@
 import Head from 'next/head'
-import Heading from '../components/Heading'
-import BigCard from '../components/BigCard'
-import LittleCard from '../components/LittleCard'
-import MidCard from '../components/MidCard'
+import Poster from '../components/poster/Poster'
+import Services from '../components/services/Services'
+import About from '../components/about/About'
+import HowToWork from '../components/howToWork/HowToWork'
+import City from '../components/city/City'
+import Reviews from '../components/reviews/Reviews'
 import styles from '../styles/Home.module.scss'
-
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper'
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
-import 'swiper/css/scrollbar'
-
-import { YMaps, Map, Placemark } from 'react-yandex-maps'
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPhoneVolume, faBookReader, faHandshake } from '@fortawesome/free-solid-svg-icons'
-
-const wallpapers = [
-  { id: 1 },
-  { id: 2 },
-  { id: 3 }
-]
-
-const infoAboutServices = [
-  { id: 1, title: 'Лазерная резка', subTitle: 'Lorem ipsum dolor sit.', pic: 'https://lazer-rmk.ru/wp-content/uploads/2019/03/lazer-rezka.png' },
-  { id: 2, title: 'Гравировка', subTitle: 'Lorem ipsum dolor sit.', pic: 'https://r-color.ru/catalog/raskroy-materiala/lazernaya-rezka/lazernaya-rezka.jpg' },
-  { id: 3, title: 'Изготовление', subTitle: 'Lorem ipsum dolor sit.', pic: 'https://proflasermet.ru/assets/images/lra_2_big.jpg' },
-  { id: 4, title: '3D обработка', subTitle: 'Lorem ipsum dolor sit.', pic: 'https://images.satu.kz/72430735_w640_h640_lazernaya-rezka-fanery.jpg' }
-]
 
 const Home = () => (
   <div className={styles.home}>
@@ -36,169 +13,13 @@ const Home = () => (
       <title>Мастерская План Б</title>
     </Head>
 
-    <div className={styles.wallpaper}>
-      <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
-        className={styles.wallpaper}
-        spaceBetween={50}
-        slidesPerView={1}
-        navigation
-        pagination={{ clickable: true }}
-      >
-        {wallpapers.map(el => (
-          <SwiperSlide key={el.id} >
-            <BigCard id={el.id} />
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
+    <Poster />
+    <Services />
+    <About />
+    <HowToWork />
+    <City />
+    <Reviews />
 
-    <Heading
-      title="Список наших услуг"
-      subTitle="Индивидуальный подход к каждому клиенту!"
-    />
-
-    <div className={styles.products}>
-      {infoAboutServices.map(({ id, title, subTitle, pic }) => (
-        <LittleCard key={id} title={title} subTitle={subTitle} pic={pic} />
-      ))}
-    </div>
-
-    <div className={styles.about}>
-      <div className={styles.wrapper}>
-        <h1>О компании</h1>
-        <h3>У нас ваша фантазия и творческий порыв обретут жизнь!</h3>
-        <p>
-          Plan B - производственная компания, поэтому изготовим Вам изделие, не делая
-          никакой накрутки магазина, и учтем все Ваши пожелания по цвету, форме и
-          содержанию изделия.
-        </p>
-        <h3>В нашей мастерской делают:</h3>
-        <p>
-          Буквы и слова из дерева;
-          Фоторамки и семейные дерева;
-          Медальницы для юных чемпионов;
-          Детские метрики;
-          Топперы для ваших мероприятий;
-          Свадебный декор (арки, ширмы, объемные буквы);
-          Предметы интерьера;
-          Декор для дома;
-          Сувенирная продукция;
-          Светильники;
-          Оборудование B2B... и многое другое!
-        </p>
-
-        {/*<ul>*/}
-        {/*  <li>Буквы и слова из дерева</li>*/}
-        {/*  <li>Фоторамки и семейные древа</li>*/}
-        {/*  <li>Медальницы для юных чемпионов</li>*/}
-        {/*  <li>Детские метрики</li>*/}
-        {/*  <li>Топперы для ваших мероприятий</li>*/}
-        {/*  <li>Свадебный декор (арки, ширмы, объемные буквы)</li>*/}
-        {/*  <li>Предметы интерьера</li>*/}
-        {/*  <li>Декор для дома</li>*/}
-        {/*  <li>Сувенирная продукция</li>*/}
-        {/*  <li>Светильники</li>*/}
-        {/*  <li>Оборудование b2b... и многое другое!</li>*/}
-        {/*</ul>*/}
-        <button>Подробнее</button>
-
-        <div className={styles.numbers}>
-          <div>
-            <h2>5</h2>
-            <p>лет</p>
-          </div>
-          <div>
-            <h2>500</h2>
-            <p>клиентов</p>
-          </div>
-          <div>
-            <h2>100%</h2>
-            <p>положительных отзывов</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <Heading
-      title="Как мы работаем"
-      subTitle="Инструкция по заказу"
-    />
-
-    <div className={styles.work}>
-      <div className={styles.wrapper}>
-        <div className={styles.iconBox}>
-          <FontAwesomeIcon icon={faPhoneVolume} className={styles.icon} />
-        </div>
-        <div className={styles.case}>
-          <p className={styles.title}>Получение вашей заявки</p>
-          <p>
-            Вы заполняете небольшую заявку. Это можно сделать по телефону или
-            непосредственно на нашем сайте, нажав на кнопку Сделать заказ. Затем
-            мы выйдем с Вами на связь. Просто и быстро.
-          </p>
-        </div>
-      </div>
-
-      <div className={styles.wrapper} id={styles.second}>
-        <div className={styles.case}>
-          <p className={styles.title}>Консультация специалиста</p>
-          <p>После того, как мы свяжемся Вам будет предложено несколько вариантов
-            консультаций. Онлайн - мы зададим все уточняющие вопросы, чтобы
-            составить максимально индивидуальный и точечный план работы. Очный -
-            классический вариант встречи со специалистом, если Вам так будет
-            удобно. Оба варианта несут одинаковое качество. </p>
-        </div>
-        <div className={styles.iconBox}>
-          <FontAwesomeIcon icon={faBookReader} className={styles.icon} />
-        </div>
-      </div>
-
-      <div className={styles.work}>
-        <div className={styles.wrapper}>
-          <div className={styles.iconBox}>
-            <FontAwesomeIcon icon={faHandshake} className={styles.icon} />
-          </div>
-          <div className={styles.case}>
-            <p className={styles.title}>Начинаем работу</p>
-            <p>После консультации со специалистом Вам сообщается полный план
-              работы. А Мастерская План Б приступает к работе. Мы всегда будет
-              на связи и готовы выслушать любые дополнительные модификации! </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <Heading
-      title="Мы на карте"
-      subTitle="Проложите путь, либо просто позвоните нам"
-    />
-
-    <div className={styles.mapWrapper}>
-      <YMaps>
-        <Map
-          className={styles.map}
-          defaultState={{
-            center: [57.96, 56.26],
-            zoom: 11,
-            controls: ['zoomControl', 'fullscreenControl']
-          }}
-          modules={['control.ZoomControl', 'control.FullscreenControl']}
-        >
-          <Placemark defaultGeometry={[57.96, 56.26]} />
-        </Map>
-      </YMaps>
-    </div>
-
-    <Heading
-      title="Отзывы партнёров и клиентов"
-      subTitle="Больше в наших соц сетях"
-    />
-
-    <div className={styles.products}>
-      <MidCard />
-      <MidCard />
-    </div>
   </div>
 )
 

@@ -1,0 +1,16 @@
+.reviews {
+  width: 1300px;
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 1300px) {
+    width: 1100px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    flex-direction: column;
+  }
+}

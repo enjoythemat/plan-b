@@ -6,8 +6,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
-  //display: flex;
-  //justify-content: center;
 
   @media screen and (max-width: 1300px) {
     width: 1100px;
@@ -21,23 +19,4 @@
     background-size: auto 100%;
     border-radius: .5rem;
   }
-
-  //.info {
-  //  font-weight: lighter;
-  //  font-size: 28px;
-  //  display: flex;
-  //  align-items: center;
-  //  flex-direction: column;
-  //  color: #ffffff;
-  //
-  //  h1, h2 {
-  //    font-family: Montserrat;
-  //    text-shadow: 0 5px 14px black;
-  //  }
-  //
-  //  h2 {
-  //    margin-top: -2rem;
-  //    font-size: 20px;
-  //  }
-  //}
 }
