@@ -1,6 +1,7 @@
 .footer {
   min-height: 150px;
-  background-color: #0d3f30;
+  margin-top: auto;
+  background-color: rgb(62, 98, 92);
   color: white;
 
   .wrapper {
@@ -48,9 +49,58 @@
         }
       }
 
-      form {
-        display: flex;
+      .request {
+
+        form {
+          display: flex;
+          flex-direction: column;
+
+          input {
+            width: 360px;
+            height: 50px;
+            padding: 12px 40px 12px 18px;
+            font-size: 16px;
+            background-color: inherit;
+            border: 1px solid white;
+            border-radius: 0.625rem;
+            margin-bottom: 1rem;
+            font-family: inherit;
+            color: white;
+            outline: none;
+
+            &::placeholder {
+              color: white;
+            }
+          }
+
+          button {
+            width: 360px;
+            height: 50px;
+            padding: 12px 40px 12px 18px;
+            border-radius: 0.625rem;
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #0d3f30;
+            font-family: inherit;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+
+            &:hover {
+              transform: scale(1.05);
+            }
+          }
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        max-width: 100%;
+        padding: 0 1rem;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+        text-align: center;
       }
     }
 

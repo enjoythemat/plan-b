@@ -1,7 +1,8 @@
-import styles from '../styles/Footer.module.scss'
+import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faMapMarker, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faInstagram, faVk } from '@fortawesome/free-brands-svg-icons'
+import styles from '../styles/Footer.module.scss'
 
 const Footer = () => (
   <div className={styles.footer}>
@@ -21,20 +22,41 @@ const Footer = () => (
         </div>
 
         <div className={styles.nav}>
+          <h2>Навигация</h2>
           <ul>
-            <li>Главная</li>
-            <li>Наши работы</li>
-            <li>Доставка</li>
-            <li>О компании</li>
-            <li>Контакты</li>
+            <li>
+              <Link href={'/'}>
+                <a>Главная</a>
+              </Link>
+            </li>
+            <li>
+              <Link href={'/album'}>
+                <a>Галерея работ</a>
+              </Link>
+            </li>
+            <li>
+              <Link href={'/shipping'}>
+                <a>Доставка</a>
+              </Link>
+            </li>
+            <li>
+              <Link href={'/about'}>
+                <a>О компании</a>
+              </Link>
+            </li>
+            <li>
+              <Link href={'/contacts'}>
+                <a>Контакты</a>
+              </Link>
+            </li>
           </ul>
         </div>
 
         <div className={styles.request}>
-          <p>Закажите обратный звонок</p>
+          <h2>Закажите обратный звонок</h2>
           <form action="post">
-            <input type="text" placeholder="Ваше имя" />
-            <input type="text" placeholder="Ваш телефон" />
+            <input type="text" placeholder="Ваше имя *" />
+            <input type="text" placeholder="Ваш телефон *" />
             <button>Отправить</button>
           </form>
         </div>
