@@ -13,7 +13,7 @@ const Footer = () => (
           <h2>©2022. План Б</h2>
           <p>Лазерная резка и гравировка</p>
           <ul>
-            <li><FontAwesomeIcon icon={faMapMarker} /> г. Пермь, ул. Героев Хасана, к. 70</li>
+            <li><FontAwesomeIcon icon={faMapMarker} /> г. Пермь, ул. Героев Хасана 105, к. 70</li>
             <li><FontAwesomeIcon icon={faPhone} /> +7 (904) 848-87-07</li>
             <li><FontAwesomeIcon icon={faEnvelope} /> plan_b_perm@mail.ru</li>
             <li><FontAwesomeIcon icon={faInstagram} /> /laserplanb</li>

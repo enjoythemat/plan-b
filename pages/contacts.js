@@ -1,6 +1,8 @@
+import styles from '../styles/Contacts.module.scss'
+
 const Contacts = () => {
   return (
-    <h1>Контакты</h1>
+    <div className={styles.contacts}>Контакты</div>
   )
 }
 

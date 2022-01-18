@@ -1,0 +1,18 @@
+.shipping {
+  margin: 1rem auto;
+  max-width: 1300px;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0 4rem 0;
+
+    .ship {
+      padding: 1rem;
+      width: 300px;
+      height: 200px;
+      border-radius: 1rem;
+      background: linear-gradient(to bottom, #eef5f6, #f6f6f6);
+    }
+  }
+}

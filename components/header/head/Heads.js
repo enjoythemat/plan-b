@@ -18,7 +18,7 @@ const Heads = ({ menu, menuIconHandler }) => {
         </div>
 
         <div className={styles.contact}>
-          <p>ул. Героев Хасана, к. 70</p>
+          <p>ул. Героев Хасана 105, к. 70</p>
           <p><FontAwesomeIcon icon={faPhone} /> +7 (904) 848-87-07</p>
         </div>
       </div>
