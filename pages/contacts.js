@@ -1,8 +1,8 @@
-import styles from '../styles/Contacts.module.scss'
+import City from '../components/city/City'
 
 const Contacts = () => {
   return (
-    <div className={styles.contacts}>Контакты</div>
+    <City />
   )
 }
 
