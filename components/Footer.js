@@ -11,11 +11,16 @@ const Footer = () => {
   const [phone, setPhone] = useState('')
 
   const handleSubmit = async event => {
-    await axios.post('http://localhost:3000', {name, phone})
+    event.preventDefault()
+
+    await axios.post('https://jsonplaceholder.typicode.com/posts', {
+      userId: 155,
+      name,
+      phone
+    })
 
     setName('')
     setPhone('')
-    event.preventDefault()
   }
 
   return (
