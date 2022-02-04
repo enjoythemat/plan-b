@@ -1,26 +1,25 @@
 import Link from 'next/link'
+import { useRef } from 'react'
+import emailjs from '@emailjs/browser'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faMapMarker, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faInstagram, faVk } from '@fortawesome/free-brands-svg-icons'
 import styles from '../styles/Footer.module.scss'
-import { useState } from 'react'
-import axios from 'axios'
 
 const Footer = () => {
-  const [name, setName] = useState('')
-  const [phone, setPhone] = useState('')
+  const form = useRef()
 
   const handleSubmit = async event => {
     event.preventDefault()
 
-    await axios.post('https://jsonplaceholder.typicode.com/posts', {
-      userId: 155,
-      name,
-      phone
-    })
+    emailjs.sendForm('service_40savm3', 'template_juztvum', form.current, 'user_s08UdZU8sXzNuHeZQOt4A')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
 
-    setName('')
-    setPhone('')
+    event.target.reset()
   }
 
   return (
@@ -73,18 +72,16 @@ const Footer = () => {
 
           <div className={styles.request}>
             <h2>Закажите обратный звонок</h2>
-            <form onSubmit={handleSubmit}>
+            <form ref={form} onSubmit={handleSubmit}>
               <input
                 type="text"
+                name="name"
                 placeholder="Ваше имя *"
-                onChange={event => setName(event.target.value)}
-                value={name}
               />
               <input
-                type="text"
+                type="numbers"
+                name="phone"
                 placeholder="Ваш телефон *"
-                onChange={event => setPhone(event.target.value)}
-                value={phone}
               />
               <button type="submit">Отправить</button>
             </form>
