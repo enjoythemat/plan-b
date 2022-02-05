@@ -36,7 +36,11 @@ const images = [
 const Album = () => {
   return (
     <div className={styles.album}>
-
+      {images.map((el, index) =>(
+        <div className={styles.img} key={index}>
+          <img src={el.src} />
+        </div>
+      ))}
     </div>
   )
 }
