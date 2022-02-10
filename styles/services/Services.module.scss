@@ -6,7 +6,6 @@
   overflow: hidden;
   overflow-x: auto;
   margin-bottom: 4rem;
-  animation: showServices .3s linear forwards;
 
   &::-webkit-scrollbar {
     display: none;
@@ -19,14 +18,5 @@
   @media screen and (max-width: 768px) {
     width: 100%;
     justify-content: flex-start;
-  }
-}
-
-@keyframes showServices {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }

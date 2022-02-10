@@ -14,6 +14,7 @@
   cursor: pointer;
   overflow: hidden;
   transition: background-size .2s ease-in-out;
+  animation: showServices .3s linear forwards;
 
   &:hover {
     background-size: auto 125%;
@@ -40,5 +41,14 @@
 
   @media screen and (max-width: 768px) {
     margin-right: .5rem;
+  }
+}
+
+@keyframes showServices {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

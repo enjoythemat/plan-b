@@ -1,6 +1,8 @@
+@import '../vars';
+
 .about {
   width: 100%;
-  background: linear-gradient(to bottom, #eef6f3, #f6f6f6);
+  background: $about-company-background;
   margin-bottom: 2rem;
 
   .wrapper {
@@ -26,13 +28,13 @@
       font-size: 1.5rem;
       border-radius: 2rem;
       border: none;
-      background-color: #31d59b;
+      background-color: $green-element;
       color: white;
       cursor: pointer;
       transition: box-shadow .3s;
 
       &:hover {
-        box-shadow: 0 0 15px #31d59b;
+        box-shadow: 0 0 15px $green-element;
       }
     }
 
