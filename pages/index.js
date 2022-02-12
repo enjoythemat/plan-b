@@ -7,20 +7,21 @@ import City from '../components/city/City'
 import Reviews from '../components/reviews/Reviews'
 import styles from '../styles/Home.module.scss'
 
-const Home = () => (
-  <div className={styles.home}>
-    <Head>
-      <title>Мастерская План Б</title>
-    </Head>
+const Home = () => {
+  return (
+    <div className={styles.home}>
+      <Head>
+        <title>Мастерская План Б</title>
+      </Head>
 
-    <Poster />
-    <Services />
-    <About />
-    <HowToWork />
-    <City />
-    <Reviews />
-
-  </div>
-)
+      <Poster />
+      <Services />
+      <About />
+      <HowToWork />
+      <City />
+      <Reviews />
+    </div>
+  )
+}
 
 export default Home
