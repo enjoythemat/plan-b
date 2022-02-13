@@ -7,7 +7,7 @@ const navigation = [
   { id: 1, title: 'Главная', path: '/' },
   { id: 2, title: 'Галерея работ', path: '/album' },
   { id: 3, title: 'Доставка', path: '/shipping' },
-  { id: 4, title: 'О компании', path: '/about' },
+  { id: 4, title: 'О компании', path: '/company' },
   { id: 5, title: 'Контакты', path: '/contacts' }
 ]
 

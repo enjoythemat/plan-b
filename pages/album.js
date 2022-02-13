@@ -1,4 +1,4 @@
-import styles from '../styles/Album.module.scss'
+import styles from '../styles/PAGES/Album.module.scss'
 
 const images = [
   {

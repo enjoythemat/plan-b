@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import ship from '../public/ship.png'
-import styles from '../styles/Shipping.module.scss'
+import styles from '../styles/PAGES/Shipping.module.scss'
 
 const Shipping = () => {
   return (

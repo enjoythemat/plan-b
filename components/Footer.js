@@ -58,7 +58,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href={'/about'}>
+                <Link href={'/company'}>
                   <a>О компании</a>
                 </Link>
               </li>

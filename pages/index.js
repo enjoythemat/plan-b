@@ -1,11 +1,11 @@
 import Head from 'next/head'
 import Poster from '../components/poster/Poster'
 import Services from '../components/services/Services'
-import About from '../components/about/About'
+import Company from '../components/company/Company'
 import HowToWork from '../components/howToWork/HowToWork'
 import City from '../components/city/City'
 import Reviews from '../components/reviews/Reviews'
-import styles from '../styles/Home.module.scss'
+import styles from '../styles/PAGES/Home.module.scss'
 
 const Home = () => {
   return (
@@ -16,7 +16,7 @@ const Home = () => {
 
       <Poster />
       <Services />
-      <About />
+      <Company />
       <HowToWork />
       <City />
       <Reviews />

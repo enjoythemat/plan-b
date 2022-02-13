@@ -1,8 +1,8 @@
-import styles from '../../styles/about/About.module.scss'
+import styles from '../../styles/company/Company.module.scss'
 
-const About = () => {
+const Company = () => {
   return (
-    <div className={styles.about}>
+    <div className={styles.company}>
       <div className={styles.wrapper}>
         <h1>О компании</h1>
         <h3>Пермская мастерская, в которой реализуются любые идеи</h3>
@@ -49,4 +49,4 @@ const About = () => {
   )
 }
 
-export default About
+export default Company
