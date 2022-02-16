@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div className={styles.home}>
       <Head>
-        <title>Мастерская План Б</title>
+        <title>Мастерская PLAN B</title>
       </Head>
 
       <Poster />

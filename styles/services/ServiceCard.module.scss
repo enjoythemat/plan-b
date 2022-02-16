@@ -15,7 +15,6 @@
   overflow: hidden;
   transition: background-size .2s ease-in-out;
   animation: showServices .3s linear forwards;
-
   &:hover {
     background-size: auto 125%;
   }

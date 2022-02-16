@@ -1,10 +1,14 @@
 import Image from 'next/image'
 import ship from '../public/ship.png'
 import styles from '../styles/PAGES/Shipping.module.scss'
+import Head from 'next/head'
 
 const Shipping = () => {
   return (
     <div className={styles.shipping}>
+      <Head>
+        <title>PLAN B - Доставка и гарантия</title>
+      </Head>
 
       <div className={styles.wrap}>
         <h2>ДОСТАВЛЯЕМ ГОТОВУЮ ПРОДУКЦИЮ ПО ВСЕЙ РОССИИ</h2>

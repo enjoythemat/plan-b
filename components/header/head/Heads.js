@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../../../styles/header/Heads.module.scss'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -10,7 +11,9 @@ const Heads = ({ menu, menuIconHandler }) => {
     <div className={styles.header}>
       <div className={styles.wrapper}>
         <div className={styles.logo}>
-          <h1 className={styles.logoText}>План Б</h1>
+          <Link href={'/'}>
+            <h1 className={styles.logoText}>PLAN B</h1>
+          </Link>
         </div>
 
         <div className={styles.request}>

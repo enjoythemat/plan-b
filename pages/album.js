@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import { useState } from 'react'
 import styles from '../styles/PAGES/Album.module.scss'
 
@@ -72,6 +73,9 @@ const Album = () => {
 
   return (
     <>
+      <Head>
+        <title>PLAN B - Фотоальбом</title>
+      </Head>
       <div className={styles.album}>
         {images.map((el, index) =>(
           <div className={styles.img} key={index}>

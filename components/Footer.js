@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { useRef } from 'react'
+import { useState, useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faMapMarker, faEnvelope } from '@fortawesome/free-solid-svg-icons'
@@ -7,6 +7,7 @@ import { faInstagram, faVk } from '@fortawesome/free-brands-svg-icons'
 import styles from '../styles/Footer.module.scss'
 
 const Footer = () => {
+  const [isSubmittedForm, setIsSubmittedForm] = useState(false)
   const form = useRef()
 
   const handleSubmit = async event => {
@@ -20,6 +21,7 @@ const Footer = () => {
       });
 
     event.target.reset()
+    setIsSubmittedForm(true)
   }
 
   return (
@@ -73,17 +75,25 @@ const Footer = () => {
           <div className={styles.request}>
             <h2>Закажите обратный звонок</h2>
             <form ref={form} onSubmit={handleSubmit}>
-              <input
-                type="text"
-                name="name"
-                placeholder="Ваше имя *"
-              />
-              <input
-                type="numbers"
-                name="phone"
-                placeholder="Ваш телефон *"
-              />
-              <button type="submit">Отправить</button>
+
+              {isSubmittedForm
+                ? <h3>📨 Мы скоро свяжемся с вами!</h3>
+                :
+                <>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Ваше имя *"
+                  />
+                  <input
+                    type="numbers"
+                    name="phone"
+                    placeholder="Ваш телефон *"
+                  />
+                  <button type="submit">Отправить</button>
+                </>
+              }
+
             </form>
           </div>
         </div>
