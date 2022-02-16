@@ -51,11 +51,13 @@
   overflow: hidden;
   justify-content: center;
   align-items: center;
+  animation: showImage .3s linear forwards;
 
   img {
     position: fixed;
     max-width: 90%;
     max-height: 90%;
+    animation: showImage .3s linear forwards;
   }
 }
 
