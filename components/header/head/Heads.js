@@ -5,7 +5,7 @@ import styles from '../../../styles/header/Heads.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
 
-const Heads = ({ menu, menuIconHandler }) => {
+const Heads = ({ menu, menuIconHandler, buttonFormHandler }) => {
 
   return (
     <div className={styles.header}>
@@ -16,7 +16,7 @@ const Heads = ({ menu, menuIconHandler }) => {
           </Link>
         </div>
 
-        <div className={styles.request}>
+        <div className={styles.request} onClick={buttonFormHandler}>
           <p>Оставить заявку</p>
         </div>
 

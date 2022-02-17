@@ -5,7 +5,7 @@ const Contacts = () => {
   return (
     <>
       <Head>
-        <title>PLAN B | Контакты</title>
+        <title>PLAN B - Контакты</title>
       </Head>
       <City />
     </>

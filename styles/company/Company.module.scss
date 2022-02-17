@@ -45,7 +45,12 @@
     .numbers {
       max-width: 500px;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
+      text-align: center;
+
+      div {
+        padding: 0 5px 0 8px;
+      }
 
       h2 {
         font-size: 3rem;

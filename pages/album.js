@@ -50,14 +50,7 @@ const images = [
   },
   {
     src: 'https://www.verywellhealth.com/thmb/AbVJd0RqySe_EvKFP1jOu6tTB4A=/500x350/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1283080277-b7010f7c094e4fc8bbb6f8cdfd299f7a.jpg'
-  },
-
-  {
-    src: 'https://www.verywellhealth.com/thmb/AbVJd0RqySe_EvKFP1jOu6tTB4A=/500x350/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1283080277-b7010f7c094e4fc8bbb6f8cdfd299f7a.jpg'
-  },
-  {
-    src: 'https://www.verywellhealth.com/thmb/AbVJd0RqySe_EvKFP1jOu6tTB4A=/500x350/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1283080277-b7010f7c094e4fc8bbb6f8cdfd299f7a.jpg'
-  },
+  }
 ]
 
 const Album = () => {
