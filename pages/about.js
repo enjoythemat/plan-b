@@ -1,8 +1,12 @@
 import styles from '../styles/PAGES/About.module.scss'
+import Head from 'next/head'
 
 const About = () => {
   return (
     <div className={styles.about}>
+      <Head>
+        <title>PLAN B - О компании</title>
+      </Head>
       <div className={styles.wrapper}>
         <h2>БОЛЕЕ 12 ЛЕТ НА РЫНКЕ ЛАЗЕРНЫХ ТЕХНОЛОГИЙ</h2>
         <p>

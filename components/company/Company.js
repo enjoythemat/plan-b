@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from '../../styles/company/Company.module.scss'
 
 const Company = () => {
@@ -28,7 +29,9 @@ const Company = () => {
           оборудование для бизнеса и многое другое!
         </p>
 
-        <button>Подробнее</button>
+        <Link href={'/about'}>
+          <button>Подробнее</button>
+        </Link>
 
         <div className={styles.numbers}>
           <div>
