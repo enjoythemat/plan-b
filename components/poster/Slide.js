@@ -5,7 +5,12 @@ const Slide = ({ id }) => (
     className={styles.card}
     style={{ backgroundImage: `url("/back-${id}.jpg")` }}
   >
-    <h1>Лазерная резка</h1>
+    <span className={styles.blur} />
+    <div className={styles.text}>
+      <h1>Лазерная резка и гравировка</h1>
+      <p>«План Б» — это Пермская мастерская, объединяющая все ключевые изделия из дерева и
+        металла для дома и бизнеса</p>
+    </div>
   </div>
 )
 

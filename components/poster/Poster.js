@@ -20,9 +20,9 @@ const Poster = () => {
         className={styles.poster}
         spaceBetween={50}
         slidesPerView={1}
-        navigation
+        // navigation
         pagination={{ clickable: true }}
-        autoplay={{ delay: 4000 }}
+        autoplay={{ delay: 10000 }}
       >
         {posters.map(el => (
           <SwiperSlide key={el.id} >
