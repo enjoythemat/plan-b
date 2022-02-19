@@ -36,9 +36,10 @@
       background-color: $green-element;
       color: white;
       cursor: pointer;
-      transition: box-shadow .3s;
+      box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.39);
+      transition: background-color .3s;
       &:hover {
-        box-shadow: 0 0 15px $green-element;
+        background-color: $hover-button-background;
       }
     }
 

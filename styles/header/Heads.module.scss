@@ -62,9 +62,9 @@
       border-radius: 40px;
       transition: background-color .3s;
       padding: 1.1rem 2rem;
-      box-shadow: 3px 3px 12px #545454;
+      box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.39);
       &:hover {
-        background-color: #52b486;
+        background-color: $hover-button-background;
       }
 
       p {
