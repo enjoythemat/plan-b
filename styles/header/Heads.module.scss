@@ -59,11 +59,12 @@
       justify-content: center;
       align-items: center;
       background-color: $green-element;
-      border-radius: 1rem;
-      transition: box-shadow .3s;
-      padding: 0 2rem;
+      border-radius: 40px;
+      transition: background-color .3s;
+      padding: 1.1rem 2rem;
+      box-shadow: 3px 3px 12px #545454;
       &:hover {
-        box-shadow: 0 0 15px $green-element;
+        background-color: #52b486;
       }
 
       p {
@@ -78,7 +79,7 @@
 
     .contact {
       text-align: end;
-      color: #8f8f8f;
+      color: #000000;
       font-size: 0.9rem;
       line-height: 6px;
 

@@ -1,7 +1,6 @@
 .heading {
   width: 1300px;
-  margin: 0 auto;
-  margin-bottom: 1rem;
+  margin: 0 auto 1rem auto;
 
   @media screen and (max-width: 1300px) {
     max-width: 1100px;
@@ -23,7 +22,7 @@
   .subtitle {
     margin-top: -2rem;
     font-size: 20px;
-    color: #95979a;
+    color: #7e7e7e;
 
     @media screen and (max-width: 768px) {
       margin-top: -1rem;
