@@ -21,7 +21,7 @@ const HowToWork = () => (
           <FontAwesomeIcon icon={faPhoneVolume} className={styles.icon} />
         </div>
         <div className={styles.case}>
-          <p className={styles.title}>Получение вашей заявки</p>
+          <p className={styles.title}>1) Получение вашей заявки</p>
           <p>
             Вы заполняете небольшую заявку. Это можно сделать по телефону или
             непосредственно на нашем сайте, нажав на кнопку Сделать заказ. Затем
@@ -32,7 +32,7 @@ const HowToWork = () => (
 
       <div className={styles.wrapper} id={styles.second}>
         <div className={styles.case}>
-          <p className={styles.title}>Консультация специалиста</p>
+          <p className={styles.title}>2) Консультация специалиста</p>
           <p>После того, как мы свяжемся Вам будет предложено несколько вариантов
             консультаций. Онлайн - мы зададим все уточняющие вопросы, чтобы
             составить максимально индивидуальный и точечный план работы. Очный -
@@ -50,7 +50,7 @@ const HowToWork = () => (
             <FontAwesomeIcon icon={faHandshake} className={styles.icon} />
           </div>
           <div className={styles.case}>
-            <p className={styles.title}>Начинаем работу</p>
+            <p className={styles.title}>3) Начинаем работу</p>
             <p>После консультации со специалистом Вам сообщается полный план
               работы. А Мастерская План Б приступает к работе. Мы всегда будет
               на связи и готовы выслушать любые дополнительные модификации! </p>
