@@ -7,13 +7,11 @@ const ReviewCard = ({ avatar, name, text }) => {
       <div className={styles.avatar}>
         <Image src={avatar} width={75} height={75} />
       </div>
+
       <div className={styles.review}>
-        <p className={styles.name}>
-          {name}
-        </p>
-        <p className={styles.text}>
-          {text}
-        </p>
+        <p className={styles.name}>{name}</p>
+        <p className={styles.rating}>⭐⭐⭐⭐⭐</p>
+        <p className={styles.text}>{text}</p>
       </div>
     </div>
   )

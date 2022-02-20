@@ -36,8 +36,8 @@ const Footer = () => {
               <li><FontAwesomeIcon icon={faMapMarker} /> г. Пермь, ул. Героев Хасана 105, к. 70</li>
               <li><FontAwesomeIcon icon={faPhone} /> +7 (904) 848-87-07</li>
               <li><FontAwesomeIcon icon={faEnvelope} /> laserplanb@yandex.ru</li>
-              <li><FontAwesomeIcon icon={faInstagram} /> /laserplanb</li>
-              <li><FontAwesomeIcon icon={faVk} /> /laserplanb</li>
+              <li><FontAwesomeIcon icon={faInstagram} /><a target="_blank" rel="noreferrer" href={'https://www.instagram.com/laserplanb/'}>/laserplanb</a></li>
+              <li><FontAwesomeIcon icon={faVk} /><a target="_blank" rel="noreferrer" href={'https://vk.com/laserplanb'}>/laserplanb</a></li>
             </ul>
           </div>
 

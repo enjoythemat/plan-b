@@ -1,14 +1,17 @@
 import styles from '../../styles/services/ServiceCard.module.scss'
 
-const ServiceCard = ({ title, pic, delay }) => {
+const ServiceCard = ({ title, subTitle, pic, delay }) => {
   return (
-    <div
-      className={styles.card}
-      style={{
-        backgroundImage: `url("${pic}")`,
-        animationDelay: `${delay}s`
-      }}>
-      <p>{title}</p>
+    <div>
+      <p className={styles.subTitle}>{subTitle}</p>
+      <div
+        className={styles.card}
+        style={{
+          backgroundImage: `url("${pic}")`,
+          animationDelay: `${delay}s`
+        }}>
+        <p>{title}</p>
+      </div>
     </div>
   )
 }

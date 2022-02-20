@@ -1,14 +1,38 @@
 import Heading from '../Heading'
 import ReviewCard from './ReviewCard'
+import firstAvatar from '../../public/Andrey-Tarasov_.jpg'
+import secondAvatar from '../../public/depositphotos_144297703-stock-photo-stylish-senior-man.jpg'
+import thirdAvatar from '../../public/polina_venigor.jpeg'
+import fourthAvatar from '../../public/32eda755d5bbb05126cf157cc8.jpg'
 import avatar from '../../public/agent_smith.jpg'
 import styles from '../../styles/reviews/Reviews.module.scss'
 
 const Reviews = () => {
   const reviews = [
-    { id: 0, name: 'Agent Smith', avatar: avatar, text: 'Быстро и качественно Быстро и качественно Быстро и качественно Быстро и качественно Быстро и качественно Быстро и качественно' },
-    { id: 1, name: 'Trinity', avatar: avatar, text: 'Работа выполнена по всем моим пожеланиям Работа выполнена по всем моим пожеланиям Работа выполнена по всем моим пожеланиям' },
-    { id: 2, name: 'Morpheus', avatar: avatar, text: 'Буду обращаться ещё! Буду обращаться ещё! Буду обращаться ещё!' },
-    { id: 3, name: 'Mr. Anderson', avatar: avatar, text: 'Подарок получился идеальным! Подарок получился идеальным! Подарок получился идеальным!' }
+    {
+      id: 0,
+      name: 'Андрей',
+      avatar: firstAvatar,
+      text: 'Мастерская супер, заказывали несколько изготовлений из дерева, всё сделали очень быстро и чётко по нашим пожеланиям! 5+'
+    },
+    {
+      id: 1,
+      name: 'Константин',
+      avatar: secondAvatar,
+      text: 'Уже второй раз пользуемся Вашими услугами и советуем всем знакомым.'
+    },
+    {
+      id: 2,
+      name: 'Наталья',
+      avatar: fourthAvatar,
+      text: 'Спасибо, заказ выполнили, как надо, ребёнок доволен!'
+    },
+    {
+      id: 3,
+      name: 'Полина',
+      avatar: thirdAvatar,
+      text: 'Заказывали подарок для родителей из дерева, родители были в восторге)))'
+    }
   ]
 
   return (
