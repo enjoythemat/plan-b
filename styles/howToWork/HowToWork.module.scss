@@ -21,6 +21,10 @@
       .icon {
         font-size: 8rem;
         color: $green-element;
+
+        @media screen and (max-width: 768px) {
+          font-size: 5rem;
+        }
       }
     }
 
