@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { useState } from 'react'
 import styles from '../styles/PAGES/Album.module.scss'
+import Heading from '../components/Heading'
 
 const images = [
   {
@@ -69,6 +70,7 @@ const Album = () => {
       <Head>
         <title>PLAN B - Фотоальбом</title>
       </Head>
+      <Heading title="Фотольбом" subTitle="Больше можно посмотреть в нашем Instagram" />
       <div className={styles.album}>
         {images.map((el, index) =>(
           <div className={styles.img} key={index}>

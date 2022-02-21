@@ -19,18 +19,22 @@
 
   .review {
 
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
     .name {
-      font-family: "Lucida Bright";
+      //font-family: Cambria;
+    }
+
+    .text {
+      font-family: Cambria;
     }
 
     .rating {
       font-size: .8rem;
       margin-bottom: 1rem;
-    }
-
-    p {
-      margin: 0;
-      padding: 0;
     }
   }
 

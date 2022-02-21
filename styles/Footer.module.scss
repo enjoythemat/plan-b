@@ -42,7 +42,7 @@
       }
 
       li:hover {
-        color: $green-element;
+        color: #1EE5E1FF;
       }
 
       .logo {
@@ -74,6 +74,9 @@
             font-family: inherit;
             color: white;
             outline: none;
+            &:hover {
+              border: 1px solid #1EE5E1FF;
+            }
 
             &::placeholder {
               color: white;

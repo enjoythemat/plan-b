@@ -44,19 +44,17 @@ const HowToWork = () => (
         </div>
       </div>
 
-
-        <div className={styles.wrapper}>
-          <div className={styles.iconBox}>
-            <FontAwesomeIcon icon={faHandshake} className={styles.icon} />
-          </div>
-          <div className={styles.case}>
-            <p className={styles.title}>3) Начинаем работу</p>
-            <p>После консультации со специалистом Вам сообщается полный план
-              работы. А Мастерская План Б приступает к работе. Мы всегда будет
-              на связи и готовы выслушать любые дополнительные модификации! </p>
-          </div>
+      <div className={styles.wrapper}>
+        <div className={styles.iconBox}>
+          <FontAwesomeIcon icon={faHandshake} className={styles.icon} />
         </div>
-
+        <div className={styles.case}>
+          <p className={styles.title}>3) Начинаем работу</p>
+          <p>После консультации со специалистом Вам сообщается полный план
+            работы. А Мастерская План Б приступает к работе. Мы всегда будет
+            на связи и готовы выслушать любые дополнительные модификации! </p>
+        </div>
+      </div>
 
     </div>
   </>
