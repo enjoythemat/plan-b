@@ -19,7 +19,7 @@
       }
 
       .icon {
-        font-size: 8rem;
+        font-size: 6rem;
         color: $green-element;
 
         @media screen and (max-width: 768px) {
@@ -31,11 +31,19 @@
     .case {
       border: 3px solid #f3f3fa;
       border-radius: 1rem;
-      padding: 2rem;
+      padding: 0 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
       .title {
         font-weight: bold;
         font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        margin: 0;
       }
     }
 
