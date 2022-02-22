@@ -44,6 +44,9 @@
       font-family: inherit;
       color: white;
       outline: none;
+      &:hover {
+        border: 1px solid #faff62;
+      }
 
       &::placeholder {
         color: white;
