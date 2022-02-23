@@ -7,8 +7,13 @@
   background: linear-gradient(to bottom, #348f50, #56b4d3);
   padding: 3rem;
   border-radius: 1rem;
-  max-width: 90%;
+  width: 456px;
+  height: 278px;
   box-shadow: 0 0 5rem black;
+
+  @media screen and (max-width: 768px) {
+    max-width: 90%;
+  }
 
   .cross {
     position: absolute;
